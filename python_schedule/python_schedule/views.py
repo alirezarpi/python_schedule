@@ -1,8 +1,6 @@
 from django.shortcuts import render
 import jdatetime 
 from . import urls
-import threading
-from django.http import HttpResponse
 from .tasks import *
 from dateutil import parser
 import pytz
