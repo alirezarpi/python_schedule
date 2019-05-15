@@ -1,0 +1,24 @@
+[1;36m 
+ -------------- celery@alirezarpi v3.1.26.post2 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.15.0-48-generic-x86_64-with-Ubuntu-18.04-bionic
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         python_schedule:0x7f149e9a0390
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     amqp://
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+[0m[0m
+[tasks]
+  . python_schedule.celery.debug_task
+  . python_schedule.tasks.fifthcall
+  . python_schedule.tasks.fourthcall
+  . python_schedule.tasks.maincall
+  . python_schedule.tasks.secondcall
+  . python_schedule.tasks.sixthcall
+  . python_schedule.tasks.thirddcall
+[0m

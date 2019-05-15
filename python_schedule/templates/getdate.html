@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<body>
+    <h2> Hello {{ name }} </h2>
+
+    <form action="{% url 'gotdate' %}" >
+        <label for="dateyear">Year: </label>
+        <input type="text" id="dateyear" name="getdateyear" size="2"/>
+        <label for="datemonth">Month: </label>
+        <input type="text" id="datemonth" name="getdatemonth" size="2"/>
+        <label for="dateday">Day: </label>
+        <input type="text" id="dateday" name="getdateday" size="2"/>
+        <br>
+        <br>
+        <label for="time">Set Time: </label>
+        <input type="time" id="time" name="gettime"/>
+        <input type="submit" value="submit"/>
+        <br>
+        <br>
+        <input type="radio" name="func" value="1">First Call<br>
+        <input type="radio" name="func" value="2">Second Call<br>
+        <input type="radio" name="func" value="3">Third Call<br>
+        <input type="radio" name="func" value="4">Fourth Call<br>
+        <input type="radio" name="func" value="5">Fifth Call<br>
+        <input type="radio" name="func" value="6">Sixth Call<br>
+    </form>
+</body>
